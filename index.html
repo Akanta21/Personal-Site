@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Andrian Kanta | Fullstack Developer</title>
+  <meta name="description" content="An inspiring web-developer hellbent on creating amazing user experience">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./stylesheet.css" />
+  <script src="./bower_components/jquery/dist/jquery.js"></script>
+  <!-- Adds animation support in AngularJS -->
+  <script src="./bower_components/angular/angular.js"></script>
+  <script src="./bower_components/angular-resource/angular-resource.js"></script>
+  <script src="./bower_components/angular-route/angular-route.js"></script>
+  <!-- Defines JavaScript animations -->
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <!-- Include the module file before the component file -->
+  <!-- phone-list files (including component and template) -->
+  <script src="profile-summary/profile-summary.module.js"></script>
+  <script src="profile-summary/profile-summary.component.js"></script>
+
+  <script src="about-me/about-me.module.js"></script>
+  <script src="about-me/about-me.component.js"></script>
+
+  <script src="past-project/past-project.module.js"></script>
+  <script src="past-project/past-project.component.js"></script>
+
+  <script src="contact-me/contact-me.module.js"></script>
+  <script src="contact-me/contact-me.component.js"></script>
+
+  <link rel="stylesheet" href="./stylesheet.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+  <META HTTP-EQUIV="Expires" CONTENT="-1">
+</head>
+<body ng-app="profileApp">
+  <header>
+    <!-- <div class="logo main"><a href="#top"> A.K</a></div> -->
+    <a href="#" class="nav-toggle">☰</a>
+    <nav>
+      <ul>
+        <li class="intro"><a href="#/top">Intro</a></li>
+        <li class="about"><a href="#/about">About Me</a></li>
+        <li class="work"><a href="#/work">Work</a></li>
+        <li class="contact"><a href="#/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
+</body>
+</html>
