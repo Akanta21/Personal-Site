@@ -3,11 +3,14 @@ angular
   .component('pastProject', {
     template:
         '<div id="work">' +
-          '<p id="workprojects"> Projects</p>' +
-          '<div class="projectcontent">' +
-            '<div class="thumbnails" ="project" ng-repeat="project in $ctrl.projects" >' +
-              '<a href="{{project.link}}" class="item"><img src="{{project.image}}"></a>' +
-              '<p>{{project.title}} : <br> <span' + 'class="overlay">{{project.description}}</span>' +
+          '<div class="wrapper">' +
+            '<h2> Projects</h2>' +
+            '<p>Some of the projects that I have completed during my stint at General Assembly...</p>' +
+            '<div class="projectcontent">' +
+              '<div class="thumbnails" ="project" ng-repeat="project in $ctrl.projects" >' +
+                '<a href="{{project.link}}" class="item"><img src="{{project.image}}"></a>' +
+                '<p>{{project.title}} : <br> <span' + 'class="overlay">{{project.description}}</span>' +
+              '</div>' +
             '</div>' +
           '<div>' +
         '</div>',

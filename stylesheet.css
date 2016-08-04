@@ -51,7 +51,7 @@ img {
 h1 {
   color: white;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 50px;
+  font-size: 80px;
   text-transform: uppercase;
   line-height: 1.2em;
 }
@@ -149,30 +149,10 @@ header .logo a {
   display: inline-block;
 }
 
-header .nav-toggle {
-  position: absolute;
-  right: 2px;
-  top: 26px;
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-  font-size: 18px;
-  display: none;
-  width: 35px;
-  height: 35px;
-  padding-top: 10px;
-}
-
-header .nav-toggle:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-@media screen and (max-width: 700px) {
-  header .nav-toggle {
-    display: block;
-  }
-}
 @media screen and (max-width: 700px) {
   header nav {
-    display: none;
+    margin:0 auto;
+    font-size:10px;
   }
 }
 
@@ -295,7 +275,7 @@ footer img {
   left: 0px;
   bottom: 0px;
   border: none;
-  background: url(./img/cover.jpg) center;
+  background: url(./img/cover.jpeg) center;
   background-size: cover;
   -webkit-box-shadow: inset 0px 0px 500px 0px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.05);
@@ -332,7 +312,7 @@ footer img {
   color: #ffcc33;
   display: block;
   font-family: "Esteban", Georgia, "Times New Roman", serif;
-  font-size: 26px;
+  font-size: 40px;
   text-transform: none;
   margin-bottom: 0px;
   font-weight: normal;
@@ -351,7 +331,7 @@ footer img {
   font-size: 16px;
   color: #ffcc33;
   text-decoration: none;
-  margin-top: 45px;
+  margin-top: 15px;
   width: 100%;
   max-width: 300px;
   height: 20px;
@@ -447,7 +427,7 @@ a.intro-down {
 }
 
 #about h2 {
-  font-size: 130px;
+  font-size: 100px;
 }
 @media screen and (max-width: 340px) {
   #about h2 {
@@ -508,7 +488,7 @@ a.intro-down {
 #work {
   position: fixed;
   display:block;
-  padding: 100px 0 0 0;
+  padding: 25px 0 120px 0;
   height: 100%;
   width:100%;
   min-height: 400px;
@@ -518,14 +498,14 @@ a.intro-down {
   -webkit-animation: fadeIn 700ms 600ms;
   -webkit-animation-fill-mode: backwards;
 }
-#workprojects{
-  width:100%;
-  font-size: 130px;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  color:white
+#work .wrapper {
+  margin-top: 70px;
+}
+#work h2 {
+  font-size: 100px;
 }
 @media screen and (max-width: 340px) {
-  #workprojects {
+  #work h2 {
     font-size: 80px;
   }
 }
@@ -534,7 +514,7 @@ a.intro-down {
 }
 #work .projectcontent{
   display:flex;
-  padding:70px;
+  padding:40px;
 }
 #work .thumbnails {
   margin: 0 auto;
@@ -602,28 +582,34 @@ a.intro-down {
 #work .thumbnails p {
   font-size: 15px;
   color:#ffcc33;
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Esteban", Georgia, "Times New Roman", serif;
 }
 #contact {
-  position: relative;
+  position: fixed;
+  display:block;
+  padding: 25px 0 120px 0;
   height: 100%;
   width:100%;
   min-height: 400px;
+  overflow: hidden;
   background: #0CE8B5;
-  color: rgba(0, 0, 0, 0.8);
-  padding: 140px 0 115px 0;
+  background-size:cover;
+  -webkit-animation: fadeIn 700ms 600ms;
+  -webkit-animation-fill-mode: backwards;
+}
+#contact .wrapper {
+  margin-top: 70px;
 }
 #contact h2 {
-  font-size: 55px;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 100px;
 }
 @media screen and (max-width: 340px) {
   #contact h2 {
-    font-size: 40px;
+    font-size: 80px;
   }
 }
 #contact p {
-  font-size: 20px;
+  font-size: 26px;
   margin-bottom: 30px;
 }
 #contact form {
@@ -635,7 +621,7 @@ a.intro-down {
 #contact form input,
 #contact form textarea {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   border: none;
   background: #efefef;
   color: rgba(0, 0, 0, 0.8);
