@@ -8,21 +8,25 @@ angular
           '<p>Frankly, we have a hard time not talking digital. So if you\'ve a project in mind, would like to collaborate, or just plain want to say hello, give us a shout. I\'d love to meet you.</p>' +
           '<form novalidate name="fillForm" class="css-form">' +
             '<div class="form-row">' +
-              '<input type="text" ng-model="fillForm.name" placeholder="name" required /><br />' +
+              '<input type="text" ng-model="fillForm.name" placeholder="Name" required /><br />' +
             '</div>' +
+
             '<div class="form-row">' +
-              '<input type="text" ng-model="fillForm.email" placeholder="email" required /><br />' +
+              '<input type="text" ng-model="fillForm.email" placeholder="Email" required /><br />' +
             '</div>' +
+
             '<div class="form-row">' +
-              '<input type="text" ng-model="fillForm.contact" placeholder="contact no" required /><br />' +
+              '<input type="text" ng-model="fillForm.contact" placeholder="Contact no" required /><br />' +
             '</div>' +
+
             '<div class="form-row">' +
               '<input type="text" ng-model="fillForm.subject" placeholder="What is it about?" required /><br />' +
             '</div>' +
+
             '<div class="form-row">' +
-              '<textarea ng-model="fillForm.text" placeholder="Just a little more..." required /><br />' +
-            '</div>' +
-            '<input type="submit" ng-click="sendData()" value="Save" />' +
+              '<textarea ng-model="fillForm.text" placeholder="Just a little more..." required /></textarea><br />' +
+            '</div><input type="submit" ng-click="sendData()" value="Save"  />' +
+
           '</form>' +
         '</div>' +
         '<p ng-show="message">' + '{{message}}' + '</p>' +
@@ -40,7 +44,7 @@ angular
         // console.log(data)
         $http({
           method: 'POST',
-          url: 'http://localhost:3000/postmsg',
+          url: 'https://andrianapi.herokuapp.com/postmsg',
           data: data
         })
         .success(function (data) {

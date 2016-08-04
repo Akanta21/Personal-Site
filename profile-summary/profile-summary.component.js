@@ -8,7 +8,7 @@ angular
             '<h1 ng-repeat="profile in $ctrl.profiles">' +
             '{{profile.name}}' +
               '<span class="lead">{{profile.description}}</span>' +
-               '<a href="#about"><span>Learn More</span></a>' +
+               '<a href="#about"><span class="arrow">Learn More</span></a>' +
             '</h1>' +
           '</div>' +
           '<footer ng-repeat="profile in $ctrl.profiles">' +
