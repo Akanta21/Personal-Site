@@ -5,7 +5,7 @@ angular
     '<div id="contact">' +
         '<div class="wrapper">' +
           '<h2>Let’s get in touch.</h2>' +
-          '<p>Frankly, we have a hard time not talking digital. So if you\'ve a project in mind, would like to collaborate, or just plain want to say hello, give us a shout. I\'d love to meet you.</p>' +
+          '<p>Frankly, we have a hard time not talking digital. So if you\'ve a project in mind, would like to collaborate, or just plain want to say hello, give me a shoutout! I\'d love to meet you.</p>' +
           '<form novalidate name="fillForm" class="css-form">' +
             '<div class="form-row">' +
               '<input type="text" ng-model="fillForm.name" placeholder="Name" required /><br />' +
